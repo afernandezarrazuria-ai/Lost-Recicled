@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>ReWear Safe – Proyecto UDIN</title>
+  styles.css
+  <script>
+    function cambiarIdioma(idioma) {
+      document.getElementById("es").style.display = idioma === "es" ? "block" : "none";
+      document.getElementById("eu").style.display = idioma === "eu" ? "block" : "none";
+    }
+  </script>
+</head>
+<body>
+
+<header class="hero">
+  <h1>ReWear Safe</h1>
+  <p>Proyecto UDIN – 1º Bachillerato</p>
+  <div class="idiomas">
+    <button onclick="cambiarIdioma('es')">Castellano</button>
+    <button onclick="cambiarIdioma('eu')">Euskera</button>
+  </div>
+</header>
+
+<div id="es">
+  <section class="section">
+    <h2>¿Quiénes somos?</h2>
+    <p>
+      ReWear Safe es un proyecto escolar que transforma ropa de segunda mano
+      en nuevas prendas sostenibles, combinando reciclaje textil,
+      innovación tecnológica e impacto social.
+    </p>
+  </section>
+</div>
+
+<div id="eu" style="display:none">
+  <section class="section">
+    <h2>Nor gara?</h2>
+    <p>
+      ReWear Safe ikastetxeko proiektu bat da, bigarren eskuko arropa
+      jantzi jasangarri berrietan bihurtzen duena.
+    </p>
+  </section>
+</div>
+
+<footer>
+  <p>© 2026 ReWear Safe | Proyecto UDIN – 1º Bachillerato</p>
+</footer>
+
+</body>
+</html>
